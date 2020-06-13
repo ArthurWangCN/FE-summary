@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress + GitHub Pages 搭建个人博客 | 前端知识汇总</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/FE-summary/favicon.ico">
+    <meta name="description" content="FE summary">
+    <link rel="preload" href="/FE-summary/assets/css/0.styles.9735f572.css" as="style"><link rel="preload" href="/FE-summary/assets/js/app.3424d683.js" as="script"><link rel="preload" href="/FE-summary/assets/js/2.ac02c601.js" as="script"><link rel="preload" href="/FE-summary/assets/js/11.85a6b5cf.js" as="script"><link rel="prefetch" href="/FE-summary/assets/js/10.9968b558.js"><link rel="prefetch" href="/FE-summary/assets/js/12.333f7dd5.js"><link rel="prefetch" href="/FE-summary/assets/js/13.d092e156.js"><link rel="prefetch" href="/FE-summary/assets/js/14.fb90977c.js"><link rel="prefetch" href="/FE-summary/assets/js/15.9aff105b.js"><link rel="prefetch" href="/FE-summary/assets/js/16.dfab1af9.js"><link rel="prefetch" href="/FE-summary/assets/js/17.4d640116.js"><link rel="prefetch" href="/FE-summary/assets/js/3.bb8e7b2f.js"><link rel="prefetch" href="/FE-summary/assets/js/4.8bc909cc.js"><link rel="prefetch" href="/FE-summary/assets/js/5.ec7f9d8e.js"><link rel="prefetch" href="/FE-summary/assets/js/6.91f9d262.js"><link rel="prefetch" href="/FE-summary/assets/js/7.4be9d270.js"><link rel="prefetch" href="/FE-summary/assets/js/8.7de7a995.js"><link rel="prefetch" href="/FE-summary/assets/js/9.d7908fdf.js">
+    <link rel="stylesheet" href="/FE-summary/assets/css/0.styles.9735f572.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/FE-summary/" class="home-link router-link-active"><!----> <span class="site-name">前端知识汇总</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/FE-summary/basic/" class="nav-link">
+  基础
+</a></div><div class="nav-item"><a href="/FE-summary/advance/" class="nav-link">
+  进阶
+</a></div><div class="nav-item"><a href="/FE-summary/high/" class="nav-link">
+  高阶
+</a></div><div class="nav-item"><a href="/FE-summary/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/FE-summary/common/" class="nav-link">
+  通识
+</a></div><div class="nav-item"><a href="/FE-summary/distillation/" class="nav-link">
+  精华
+</a></div><div class="nav-item"><a href="/FE-summary/skill/" class="nav-link">
+  技巧
+</a></div><div class="nav-item"><a href="/FE-summary/comprehensive/" class="nav-link">
+  综合
+</a></div><div class="nav-item"><a href="/FE-summary/blog/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  本站搭建
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/FE-summary/basic/" class="nav-link">
+  基础
+</a></div><div class="nav-item"><a href="/FE-summary/advance/" class="nav-link">
+  进阶
+</a></div><div class="nav-item"><a href="/FE-summary/high/" class="nav-link">
+  高阶
+</a></div><div class="nav-item"><a href="/FE-summary/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/FE-summary/common/" class="nav-link">
+  通识
+</a></div><div class="nav-item"><a href="/FE-summary/distillation/" class="nav-link">
+  精华
+</a></div><div class="nav-item"><a href="/FE-summary/skill/" class="nav-link">
+  技巧
+</a></div><div class="nav-item"><a href="/FE-summary/comprehensive/" class="nav-link">
+  综合
+</a></div><div class="nav-item"><a href="/FE-summary/blog/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  本站搭建
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuepress-github-pages-搭建个人博客"><a href="#vuepress-github-pages-搭建个人博客" class="header-anchor">#</a> VuePress + GitHub Pages 搭建个人博客</h1> <h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>我相信每一个程序员入门时，都经历过搭建一个个人博客这样的阶段。确实这是一个好的练手项目，而搭建博客难度也可高可低，取决于个人目标。本文提供了一个选择，可基于 GitHub 的 GitHub Pages 功能 和 Vuepress 框架快速地搭建免费的markdown博客：</p> <ul><li>对于文档编写者来说，能更专注于写文章</li> <li>对于文档开发者来说，一切皆Vue组件，能方便地自定义主题</li></ul> <blockquote><p>Vuepress官网：https://vuepress.vuejs.org/zh/</p></blockquote> <h2 id="本地构建"><a href="#本地构建" class="header-anchor">#</a> 本地构建</h2> <h3 id="基本工具"><a href="#基本工具" class="header-anchor">#</a> 基本工具</h3> <ol><li>node.js以及npm包管理工具： https://nodejs.org/en/</li> <li>git工具：https://git-scm.com/downloads</li></ol> <h3 id="构建基本项目结构"><a href="#构建基本项目结构" class="header-anchor">#</a> 构建基本项目结构</h3> <p>1、新建一个名为 <code>blog-demo</code> 的文件夹，命令行进入到该文件夹目录，输入命令：</p> <div class="language- extra-class"><pre class="language-text"><code># 按默认配置初始化一个项目，此时会在当前目录下生成 package.json 文件
+npm init -y
+</code></pre></div><p>2、将 VuePress作为一个本地依赖安装</p> <div class="language- extra-class"><pre class="language-text"><code>npm install -D vuepress
+</code></pre></div><p>3、在 <code>package.json</code> 里的 <code>scripts</code> 中添加如下代码，不需要修改其它代码</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;vuepress dev docs&quot;,
+    &quot;build&quot;: &quot;vuepress build docs&quot;
+  }
+}
+</code></pre></div><p>4、在项目根目录下，新建 <code>docs</code> 文件夹</p> <div class="language- extra-class"><pre class="language-text"><code>mkdir docs
+</code></pre></div><p>5、新建一个 <code>markdown</code> 文件</p> <div class="language- extra-class"><pre class="language-text"><code>echo '# Hello VuePress!' &gt; docs/README.md
+</code></pre></div><p>6、输入命令启动项目，在浏览器中访问 <code>http://localhost:8080/</code> 即可预览效果</p> <div class="language- extra-class"><pre class="language-text"><code>npm run dev
+</code></pre></div><h3 id="基本配置"><a href="#基本配置" class="header-anchor">#</a> 基本配置</h3> <p>现在我们已经构建出了最基本的项目结构，并且可以在浏览器中预览到 <code>docs</code> 目录下的 <code>README.md</code>文件的效果，该文件即是我们网站的首页，如图所示：</p> <p><img src="https://img-blog.csdnimg.cn/20190129230415615.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29sZXdhX0hISA==,size_16,color_FFFFFF,t_70" alt="localhost:8080"></p> <p>然而如果没有任何配置，用户将无法在网站上自由导航。因此，为了更好地自定义我们的网站，我们接着在 <code>docs</code> 目录下新建 <code>.vuepress</code> 文件夹，执行命令如下：</p> <div class="language- extra-class"><pre class="language-text"><code># 新建 .vuepress 文件夹
+mkdir docs\.vuepress
+</code></pre></div><p>接着在 <code>.vuepress</code> 文件夹下新建 <code>config.js</code> 文件,这里的 <code>config.js</code> 便是一个 <code>Vuepress</code> 网站必要的配置文件，在其中添加如下代码：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  base<span class="token operator">:</span> <span class="token string">'/blog-demo/'</span><span class="token punctuation">,</span>
+  title<span class="token operator">:</span> <span class="token string">'blog-demo'</span><span class="token punctuation">,</span>
+  description<span class="token operator">:</span> <span class="token string">'Vuepress blog demo'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>其中配置项的含义为：</p> <p>base：站点的基础路径，它的值应当总是以斜杠开始，并以斜杠结束。这里设置为 /blog-demo/ ，我们再次在本地运行项目，访问路径就需要变更为 http://localhost:8080/blog-demo/
+title：网站的标题
+description：网站的描述</p> <h2 id="默认主题配置"><a href="#默认主题配置" class="header-anchor">#</a> 默认主题配置</h2> <p><code>Vuepress</code> 提供了一个默认主题，让我们不必自己去从零实现复杂的 <code>markdown</code> 文件渲染、目录结构等，直接按照规则去使用它即可。如果你想自定义自己的主题，请查看官方文档：<a href="https://vuepress.vuejs.org/zh/theme/writing-a-theme.html" target="_blank" rel="noopener noreferrer">Vuepress-开发主题<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <h3 id="首页"><a href="#首页" class="header-anchor">#</a> 首页</h3> <p>默认主题提供了一个首页的布局，想要使用它，需要在你的根级 <code>README.md</code> 以格式 <a href="https://vuepress.vuejs.org/zh/guide/markdown.html#front-matter" target="_blank" rel="noopener noreferrer">YAML front matter<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 指定 home: true。因此，将我们最初创建的 <code>README.md</code> 修改一下：</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token hr punctuation">---</span>
+home: true
+heroImage: /vue-logo.png
+heroText: blog-demo
+tagline: 博客示例
+actionText: 快速上手 →
+actionLink: /
+features:
+<span class="token list punctuation">-</span> title: 简洁至上
+  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+<span class="token list punctuation">-</span> title: Vue驱动
+  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
+<span class="token list punctuation">-</span> title: 高性能
+  <span class="token title important">details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+<span class="token punctuation">---</span></span>
+</code></pre></div><ul><li>heroImage: 首页图片，图片放置在 <code>.vupress/public</code> 文件夹下，若没有该文件夹则自己创建一个，保存一张你想要的首页图片，并在此处引用。</li> <li>其它参数请参考官方文档：<a href="https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E9%A6%96%E9%A1%B5" target="_blank" rel="noopener noreferrer">Vuepress-默认主题首页<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h3 id="导航栏"><a href="#导航栏" class="header-anchor">#</a> 导航栏</h3> <p>导航栏可能包含你的页面标题、搜索框、 导航栏链接、多语言切换、仓库链接，它们均取决于你的配置。在 <code>.vupress/config.js</code> 文件添加一些导航栏链接：</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+	themeConfig: {
+	  	// 你的GitHub仓库，请正确填写
+	    repo: 'https://github.com/xxxxxxx/blog-demo',
+	    // 自定义仓库链接文字。
+	    repoLabel: 'My GitHub',
+	  	nav: [
+	  		{ text: 'Home', link: '/' },
+	  		{ text: 'FirstBlog', link: '/blog/FirstBlog.md' }
+	  	]
+	}
+}
+</code></pre></div><p>接着，我们在 <code>docs</code> 目录下新建 <code>blog</code> 文件夹，在 <code>blog</code> 目录下创建 <code>/blog/FirstBlog.md</code> 作为我们第一篇博客的内容：</p> <div class="language- extra-class"><pre class="language-text"><code># 我的第一篇博客
+My First Blog
+</code></pre></div><p>我们再在项目根目录，即 <code>blog-demo</code> 下，输入命令 <code>npm run dev</code> ，浏览器中访问<code>http://localhost:8080/blog-demo/</code> 查看页面效果，点击页面右上角的<code>FirstBlog</code> 可以看到我们第一篇博客。</p> <h3 id="侧边栏"><a href="#侧边栏" class="header-anchor">#</a> 侧边栏</h3> <p>最后我们配置侧边栏，让用户体验更好一些，在 <code>.vupress/config.js</code> 文件添加一些代码：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    sidebar<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">[</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token string">'首页'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">[</span><span class="token string">'/blog/FirstBlog.md'</span><span class="token punctuation">,</span> <span class="token string">'我的第一篇博客'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="部署"><a href="#部署" class="header-anchor">#</a> 部署</h2> <p>最后一步，我们需要将代码部署到GitHub Pages，具体请参照文档：Vupress-部署。</p> <p>1、首先确定你的项目是否满足以下条件：</p> <p>文档放置在项目的 docs 目录中
+使用的是默认的构建输出位置
+VuePress 以本地依赖的形式被安装到你的项目中，在根目录的 package.json文件中有如下两段代码：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// 配置npm scripts</span>
+<span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+ <span class="token punctuation">}</span>
+
+<span class="token comment">// VuePress 以本地依赖的形式被安装</span>
+<span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;vuepress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^0.14.8&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>2、在github上创建一个名为 blog-demo 的仓库，并将你的代码提交到github上。如果你对git不熟悉，请先阅读：Git教程-廖雪峰的官方网站</p> <p>3、在 docs/.vuepress/config.js 文件中设置正确的 base。</p> <p>如果打算发布到 <code>https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;/</code>（也就是说你的仓库在 <code>https://github.com/&lt;USERNAME&gt;/&lt;REPO&gt;</code>），则将 base 设置为 <code>/&lt;REPO&gt;/</code>，此处我设置为 <code>/blog-demo/</code> 。</p> <p>4、在项目根目录中，创建一个如下的 deploy.sh 脚本文件，请自行修改github仓库地址</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token shebang important">#!/usr/bin/env sh</span>
+
+<span class="token comment"># 确保脚本抛出遇到的错误</span>
+<span class="token builtin class-name">set</span> -e
+
+<span class="token comment"># 生成静态文件</span>
+<span class="token function">npm</span> run docs:build
+
+<span class="token comment"># 进入生成的文件夹</span>
+<span class="token builtin class-name">cd</span> docs/.vuepress/dist
+
+<span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token function">git</span> commit -m <span class="token string">'deploy'</span>
+
+<span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;</span>
+<span class="token function">git</span> push -f git@github.com:<span class="token operator">&lt;</span>USERNAME<span class="token operator">&gt;</span>/<span class="token operator">&lt;</span>REPO<span class="token operator">&gt;</span>.git master:gh-pages
+
+<span class="token builtin class-name">cd</span> -
+
+</code></pre></div><p>5、双击 <code>deploy.sh</code> 运行脚本，会自动在我们的 <code>GitHub</code> 仓库中，创建一个名为 <code>gh-pages</code> 的分支，而我们要部署到 <code>GitHub Pages</code> 的正是这个分支。</p> <p><img src="https://img-blog.csdnimg.cn/20190201192054595.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29sZXdhX0hISA==,size_16,color_FFFFFF,t_70" alt=""></p> <p>6、这是最后一步了，在 <code>GitHub</code> 当前仓库点击 <code>Setting</code> 按钮，找到 <code>GitHub Pages</code> - <code>Source</code>，选择<code>gh-pages</code> 分支，点击 <code>Save</code> 按钮后，静静地等待它部署完成即可。</p> <p><img src="https://img-blog.csdnimg.cn/2019020119245253.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L29sZXdhX0hISA==,size_16,color_FFFFFF,t_70" alt=""></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/FE-summary/assets/js/app.3424d683.js" defer></script><script src="/FE-summary/assets/js/2.ac02c601.js" defer></script><script src="/FE-summary/assets/js/11.85a6b5cf.js" defer></script>
+  </body>
+</html>
